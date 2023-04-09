@@ -35,7 +35,6 @@ void close_file(int tb)
 	int c;
 
 	c = close(tb);
-
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close tb %d\n", tb);
